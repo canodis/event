@@ -21,8 +21,8 @@ function whoWins(string $p, string $c) {
 
 echo "Choose rock, paper, or scissors: ";
 $input = trim(fgets(STDIN));
-$microseconds = explode(" ", microtime())[0];
-srand($microseconds * 1000000);
+// $microseconds = explode(" ", microtime())[0];
+// srand($microseconds * 1000000);
 $cc = rand(0,2);
 whoWins(strtolower($input), $cc == 0 ? "rock" : ($cc == 1 ? "paper" : "scissors"));
 ?>

@@ -8,8 +8,8 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
-            "program": "/home/canodis/Desktop/event/ex14/a.out",
-            "args": ["2"],
+            "program": "/Users/rtosun/Desktop/event/ex14/a.out",
+            "args": ["5"],
             "cwd": "${workspaceFolder}"
         }
     ]

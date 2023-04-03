@@ -1,9 +1,1 @@
-Bir C programcısı, bir C++ programcısı ve bir Python programcısı bir bara gidiyorlar. Biralarını içerken bir fikirleri geliyor ve her biri bir ev inşa etmeye karar veriyor.
-
-C programcısı evini inşa ederken, her tuğlayı tek tek yerleştiriyor, her birinin doğru bir şekilde yerleştirildiğinden emin oluyor ve sonunda evini inşa ediyor.
-
-C++ programcısı ise, biraz daha modern bir yaklaşım benimsiyor. Evini inşa etmek için hazır bir şablon kullanıyor ve bu şablonun tüm özelliklerini kullanarak evini inşa ediyor.
-
-Python programcısı ise, daha rahat bir yaklaşım benimsiyor. Birkaç satır kod yazarak evini inşa ediyor ve sonra bir bira daha söylüyor.
-
-Sonuç olarak, C programcısı evini bitirdiğinde diğer ikisi onunla gurur duyarken, Python programcısı sadece şöyle diyor: "Benim kodum sadece birkaç satır ezikler ehaehheheh!"
+Geçen gün karım rujunu uzatmamı istedi ama ben yanlışlıkla ona bir yapıştırıcı uzattım. Hala benimle konuşmuyor.

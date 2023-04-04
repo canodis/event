@@ -13,19 +13,31 @@ void    put_empty(int level, int q)
 		inc += (increments % 2 == 0 ? 4 : 2);
 	}
     for (int i = 0; i < (base - q) / 2; i++)
-        printf(" ");
+        cout << " ";
 }
 
-void    put_line(int width)
+void    put_line(int width, int floor, int level, int heigth)
 {
-    for (int y = 0; y < width; y++)
+    int door = 1 + 2 * ((floor - 1) / 2);
+
+    for (int x = 0; x < width; x++)
     {
-        if (y == 0)
-            printf("/");
-        else if (y == width - 1)
-            printf("\\\n");
+        if (x == 0)
+            cout << "/";
+        else if (x == width - 1)
+            cout << "\\\n";
         else
-            printf("*");
+        {
+            if (floor == level && x >= (width - door) / 2
+					&& x < (width + door) / 2 && 2 + floor - heigth <= door)
+				if (door >= 5 && heigth == 2 + floor - door / 2 - 1
+						&& x == (width + door) / 2 - 2)
+					cout << '$';
+				else
+					cout << '|';
+			else
+				cout << '*';
+        }
     }
 }
 
@@ -42,7 +54,7 @@ void sastantua(int level)
         {
             width += 2;
             put_empty(level, width);
-            put_line(width);
+            put_line(width, floor, level, j);
         }
         floor++;
         width += 4 + 2 * ((floor - 2) / 2);
@@ -51,6 +63,8 @@ void sastantua(int level)
 
 int main(int ac, char **av)
 {
-    sastantua(av[1][0] - 48);
+    if (ac != 2)
+        return 1;
+    sastantua(atoi(av[1]));
 }
 
